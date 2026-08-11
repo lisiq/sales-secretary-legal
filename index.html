@@ -64,7 +64,7 @@
         <p>You can attach photos of bills, items and shipping labels. Photos you take with the camera or choose from your photo library are downscaled and saved inside the app's own local database on your device. They are never uploaded, never transmitted, and are visible only inside the app. The app requests camera and photo library access solely for this purpose, and only at the moment you tap to add a photo.</p>
 
         <h2>Address Suggestions</h2>
-        <p>When you type a pick-up address, the app uses Apple's MapKit search-completion service to suggest real streets and places. As you type, the partial text you have entered is sent to Apple in order to return those suggestions. This is handled entirely by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; the app does not attach your identity to the request, and no other field from your records is included. This is the only feature that sends anything off the device automatically. If you would rather it did not, simply type the address without selecting a suggestion.</p>
+        <p>When you type a pick-up address, the app uses Apple's MapKit search-completion service to suggest real streets and places. As you type, the partial text you have entered is sent to Apple in order to return those suggestions. This is handled entirely by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; the app does not attach your identity to the request, and no other field from your records is included. Apart from the in-app purchase described below, this is the only feature that sends anything off the device. If you would rather it did not, simply type the address without selecting a suggestion.</p>
 
         <h2>Opening a Location in Maps</h2>
         <p>Each saved location offers an "Open in Maps" action with a choice of Apple Maps, Google Maps or Waze. If you choose one, that address is passed to the app or website you selected, and from that point the chosen provider's own privacy policy applies (Apple, Google, or Waze respectively). Nothing is sent unless you tap the action and pick a provider.</p>
@@ -78,11 +78,16 @@
         <h2>Reports</h2>
         <p>The app can generate a one-page PDF summary of a selected period. It is produced on your device and shared only through the iOS share sheet, at your initiative.</p>
 
-        <h2>Network Access</h2>
-        <p>Beyond the address suggestions described above, Sales Secretary makes no network requests. The app is fully usable offline; only address autocomplete requires a connection.</p>
+        <h2>In-App Purchase</h2>
+<p>Sales Secretary is free. One optional in-app purchase, Sales Secretary Pro, unlocks the analysis charts, the PDF report and custom option lists. It is paid once and is not a subscription.</p>
+<p>The purchase is handled entirely by Apple through the App Store. Your payment details are given to Apple, never to us: we do not see, receive or store your card, your billing address, your Apple Account or any part of the transaction. We receive only the anonymous, aggregated sales figures every developer gets from Apple, which cannot be traced back to an individual.</p>
+<p>When you open the upgrade screen, make a purchase, or tap "Restore purchase", the app asks Apple whether this Apple Account owns the unlock. That exchange is between your device and Apple, under Apple's Privacy Policy. Nothing from your records is included, and no purchase check happens unless you open one of those screens.</p>
+
+<h2>Network Access</h2>
+        <p>Beyond the address suggestions and the in-app purchase described above, Sales Secretary makes no network requests. The app is fully usable offline; only address autocomplete and buying or restoring Pro require a connection. If you already own Pro, it stays unlocked offline.</p>
 
         <h2>Third-Party Services</h2>
-        <p>Sales Secretary integrates no third-party analytics, advertising, crash-reporting, or tracking services. It uses only first-party Apple frameworks (SwiftUI, SwiftData, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
+        <p>Sales Secretary integrates no third-party analytics, advertising, crash-reporting, or tracking services. It uses only first-party Apple frameworks (SwiftUI, SwiftData, StoreKit, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
 
         <h2>Children's Privacy</h2>
         <p>Sales Secretary does not knowingly collect any information from children. The app has no accounts, no social features, no user-generated content shared with anyone, and no data collection.</p>
@@ -132,7 +137,7 @@
         <p>Sie können Fotos von Rechnungen, Artikeln und Versandetiketten anhängen. Diese werden verkleinert und in der lokalen Datenbank der App auf Ihrem Gerät gespeichert. Sie werden weder hochgeladen noch übertragen. Der Zugriff auf Kamera und Fotomediathek wird ausschließlich zu diesem Zweck und erst beim Hinzufügen eines Fotos angefragt.</p>
 
         <h2>Adressvorschläge</h2>
-        <p>Bei der Eingabe einer Abholadresse nutzt die App Apples MapKit-Suchvervollständigung, um echte Straßen und Orte vorzuschlagen. Dabei wird der von Ihnen eingegebene Textausschnitt an Apple übermittelt, um die Vorschläge zu erhalten. Die Verarbeitung erfolgt durch Apple gemäß <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzerklärung</a>; es werden keine weiteren Daten aus Ihren Aufzeichnungen mitgesendet. Dies ist die einzige Funktion, bei der automatisch Daten das Gerät verlassen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der korrekten Adresserfassung); Sie können darauf verzichten, indem Sie die Adresse ohne Auswahl eines Vorschlags eintippen.</p>
+        <p>Bei der Eingabe einer Abholadresse nutzt die App Apples MapKit-Suchvervollständigung, um echte Straßen und Orte vorzuschlagen. Dabei wird der von Ihnen eingegebene Textausschnitt an Apple übermittelt, um die Vorschläge zu erhalten. Die Verarbeitung erfolgt durch Apple gemäß <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzerklärung</a>; es werden keine weiteren Daten aus Ihren Aufzeichnungen mitgesendet. Abgesehen vom unten beschriebenen In-App-Kauf ist dies die einzige Funktion, bei der Daten das Gerät verlassen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der korrekten Adresserfassung); Sie können darauf verzichten, indem Sie die Adresse ohne Auswahl eines Vorschlags eintippen.</p>
 
         <h2>Öffnen in Karten-Apps</h2>
         <p>Zu jeder gespeicherten Adresse können Sie „In Karten öffnen" wählen (Apple Karten, Google Maps oder Waze). Dabei wird die Adresse an den von Ihnen gewählten Dienst übergeben; ab diesem Zeitpunkt gilt dessen eigene Datenschutzerklärung. Ohne Ihre ausdrückliche Auswahl wird nichts übermittelt.</p>
@@ -143,11 +148,16 @@
         <h2>Export und Import</h2>
         <p>Sie können Ihre Daten in eine Datei exportieren, um ein Backup anzulegen oder sie auf ein anderes Gerät zu übertragen. Die Datei wird auf Ihrem Gerät erzeugt und an das iOS-Teilen-Menü übergeben; wohin sie anschließend gelangt, entscheiden ausschließlich Sie. Die Datei enthält Ihre erfassten Datensätze und sollte entsprechend behandelt werden. Fotos sind im Export nicht enthalten.</p>
 
-        <h2>Netzwerkzugriff</h2>
-        <p>Abgesehen von den oben beschriebenen Adressvorschlägen stellt Sales Secretary keine Netzwerkanfragen. Die App ist vollständig offline nutzbar.</p>
+        <h2>In-App-Kauf</h2>
+<p>Sales Secretary ist kostenlos. Ein optionaler In-App-Kauf, Sales Secretary Pro, schaltet die Analyse-Diagramme, den PDF-Bericht und eigene Auswahllisten frei. Es handelt sich um eine einmalige Zahlung, nicht um ein Abonnement.</p>
+<p>Die Zahlungsabwicklung erfolgt ausschließlich über Apple und den App Store. Ihre Zahlungsdaten erhält Apple, nicht wir: Kartendaten, Rechnungsanschrift, Apple-Account und Transaktionsdetails werden von uns weder eingesehen noch gespeichert. Wir erhalten lediglich die anonymisierten, aggregierten Verkaufszahlen, die Apple allen Entwicklern bereitstellt und die keiner Person zugeordnet werden können.</p>
+<p>Wenn Sie den Upgrade-Bildschirm öffnen, einen Kauf tätigen oder „Kauf wiederherstellen" antippen, fragt die App bei Apple ab, ob dieser Apple-Account die Freischaltung besitzt. Dieser Austausch findet zwischen Ihrem Gerät und Apple gemäß Apples Datenschutzerklärung statt. Daten aus Ihren Aufzeichnungen werden dabei nicht übermittelt; ohne Aufruf dieser Bildschirme findet keine Abfrage statt.</p>
+
+<h2>Netzwerkzugriff</h2>
+        <p>Abgesehen von den oben beschriebenen Adressvorschlägen und dem In-App-Kauf stellt Sales Secretary keine Netzwerkanfragen. Die App ist vollständig offline nutzbar; lediglich Adressvorschläge sowie Kauf und Wiederherstellung von Pro benötigen eine Verbindung. Ein bereits erworbenes Pro bleibt auch offline freigeschaltet.</p>
 
         <h2>Drittanbieter-Dienste</h2>
-        <p>Sales Secretary integriert keine Analyse-, Werbe-, Crash-Reporting- oder Tracking-Dienste von Drittanbietern. Verwendet werden ausschließlich Apple-eigene Frameworks (SwiftUI, SwiftData, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
+        <p>Sales Secretary integriert keine Analyse-, Werbe-, Crash-Reporting- oder Tracking-Dienste von Drittanbietern. Verwendet werden ausschließlich Apple-eigene Frameworks (SwiftUI, SwiftData, StoreKit, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
 
         <h2>Ihre Rechte (DSGVO)</h2>
         <p>Da uns keine personenbezogenen Daten erreichen, können wir weder Auskunft erteilen noch Daten berichtigen oder löschen — es liegen uns schlicht keine vor. Ihre Daten befinden sich auf Ihrem Gerät: Einzelne Einträge können Sie in der App löschen, und das Entfernen der App löscht sämtliche Daten einschließlich der Fotos. Dieser Vorgang ist endgültig; exportieren Sie Ihre Daten vorher, wenn Sie sie behalten möchten. Bei Rückfragen erreichen Sie uns unter der oben genannten E-Mail-Adresse.</p>
