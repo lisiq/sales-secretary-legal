@@ -49,28 +49,33 @@
 <body>
     <div class="container">
         <h1>Sales Secretary Privacy Policy</h1>
-        <p class="date">Effective date: August 18, 2026</p>
+        <p class="date">Effective date: September 21, 2026</p>
 
         <h2>Overview</h2>
         <p>This privacy policy applies to <strong>Sales Secretary</strong> on the App Store (referred to throughout this document as "Sales Secretary" or "the app"). Sales Secretary is a personal bookkeeping app for people who resell clothing: it records what you buy, what you keep, return or sell, and works out your profit. Your privacy matters to us. This policy explains what data the app handles and where it goes.</p>
 
         <h2>Data Collection</h2>
-        <p>Sales Secretary does not collect, store, or transmit any personal data to us. The app does not require an account, has no user profiles, includes no analytics services, and contains no advertising SDKs or tracking technologies of any kind. There is no Sales Secretary server — we never receive your records and could not access them if we wanted to.</p>
+        <p>Sales Secretary does not send your records to the developer. There is no Sales Secretary server, no separate app account, no analytics service, no advertising SDK and no tracking. Starting with version 1.6, you can choose to sync your records through your private Apple iCloud account. Apple processes iCloud data under its own terms and privacy policy; the developer cannot browse your private iCloud records.</p>
 
         <h2>Local Storage</h2>
-        <p>Everything you enter — purchases, items, prices, sales, buyers, notes, payment schedules, photos and your app settings — is stored locally on your device using Apple's SwiftData and UserDefaults. This data stays on the device you entered it on. The app does not sync to iCloud, so your records are not copied to any other device unless you export them yourself (see below).</p>
+        <p>Purchases, items, prices, sales, buyer details, notes, payment schedules and photos are saved in the app’s database on your device. Preferences and custom lists are saved in local settings. The app works offline. Versions before 1.6 store records locally; from version 1.6, optional iCloud sync is available and is off until you enable it in Settings.</p>
+
+        <h2>Optional iCloud Sync (version 1.6 and later)</h2>
+        <p>When you enable iCloud sync and restart the app, existing and future purchases, items, returns, refunds, payment schedules, sales, buyer names and addresses, notes and attached photos are uploaded to your private iCloud database using Apple CloudKit. Custom and hidden option lists, your currency and the Needs attention return window use Apple’s iCloud key-value storage. This makes the same data available on supported iPhones, iPads and Macs where you use the same iCloud Apple Account and enable sync. There is no Google login or separate Sales Secretary login. Notification permissions, reminder times and notification lead times stay specific to each device.</p>
+        <p>Sync needs an internet connection, iCloud enabled for the app and available iCloud storage. Transfers are scheduled by Apple and may take time, especially photos. Your local records remain usable offline. Changes and deletions also sync; iCloud sync is not a separate historical backup. If the same field is edited on two devices before syncing, one edit may replace the other. Enabling sync combines existing device records with records already in iCloud. Import a manual backup on only one device to avoid duplicates.</p>
+        <p>You can turn sync off in the app’s Settings; the change takes effect after you close and reopen the app. This keeps the local records and does not erase the iCloud copy. Uninstalling the app does not remove records already synced to iCloud. To remove synced records, delete them in the app while sync is on and allow the deletion to sync. You can also manage the app’s iCloud storage in your Apple Account settings. Apple’s <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a> and <a href="https://www.apple.com/legal/internet-services/icloud/">iCloud terms</a> apply to Apple’s service.</p>
 
         <h2>Photos</h2>
-        <p>You can attach photos of bills, items and shipping labels. Photos you take with the camera or choose from your photo library are downscaled and saved inside the app's own local database on your device. They are never uploaded, never transmitted, and are visible only inside the app. The app requests camera and photo library access solely for this purpose, and only at the moment you tap to add a photo.</p>
+        <p>You can attach photos of bills, items, return receipts and shipping labels. Photos you take or choose are downscaled and saved in the app’s database. If you enable iCloud sync, these copies also sync through your private iCloud storage. Camera and photo-library access are requested only to add photos you select. Photos are not included in the manual JSON export.</p>
 
         <h2>Address Suggestions</h2>
-        <p>When you type a pick-up address, the app uses Apple's MapKit search-completion service to suggest real streets and places. As you type, the partial text you have entered is sent to Apple in order to return those suggestions. This is handled entirely by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; the app does not attach your identity to the request, and no other field from your records is included. Apart from the purchase checks described below, this is the only feature that sends anything off the device. If you would rather it did not, simply type the address without selecting a suggestion.</p>
+        <p>When you type a pick-up address, Apple’s MapKit search-completion service sends the partial text to Apple to retrieve suggestions. This can happen while you type, before you select a suggestion. Apple handles these requests under <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. The app does not attach other fields from your records to the search request.</p>
 
         <h2>Opening a Location in Maps</h2>
         <p>Each saved location offers an "Open in Maps" action with a choice of Apple Maps, Google Maps or Waze. If you choose one, that address is passed to the app or website you selected, and from that point the chosen provider's own privacy policy applies (Apple, Google, or Waze respectively). Nothing is sent unless you tap the action and pick a provider.</p>
 
         <h2>Notifications</h2>
-        <p>Sales Secretary can remind you about return deadlines, instalment payments due, and parcels waiting to be posted. These are local notifications: they are scheduled and delivered by iOS on your device from data already stored there. No push server is involved and nothing leaves your phone. Notifications are off until you turn them on, and you can revoke permission at any time in iOS Settings.</p>
+        <p>Return, payment and shipping reminders are local notifications, scheduled on your device. They are off until enabled, and you can revoke permission in device Settings. Separately, when iCloud sync is on, Apple uses background push notifications to notify the app about cloud changes. These do not turn on reminder alerts and do not involve a Sales Secretary push server.</p>
 
         <h2>Export and Import</h2>
         <p>You can export your records to a file so you can keep a backup or move them to another device. The export is created on your device and handed to the standard iOS share sheet — where it goes next (Files, AirDrop, email, another app) is entirely your choice, and it leaves our control at that moment. The file contains the records you have entered, so treat it like any other personal document. Importing reads such a file back in and adds the records to what is already on the device. Photos are not included in exports.</p>
@@ -88,16 +93,16 @@
 <p>Sales Secretary Pro includes Home Screen and Lock Screen widgets. To show your figures outside the app, the app writes a small summary (your profit totals, and the names, dates and amounts of things that need attention) into a private container on your device that only Sales Secretary and its widgets can read. It is written when you leave the app and stays on your device; it is never uploaded or shared. The widgets make no network requests of their own. If you do not have Pro, the widgets show a locked state and the summary contains no records.</p>
 
 <h2>Network Access</h2>
-        <p>Beyond the address suggestions and the purchase checks described above, Sales Secretary makes no network requests. The app is fully usable offline; only address autocomplete and subscribing or restoring require a connection. Once Pro is unlocked on your device it stays unlocked offline.</p>
+        <p>Network access is used for optional iCloud sync, address suggestions, opening a chosen maps provider and App Store purchase checks. Your local records remain usable offline. iCloud transfers wait for connectivity; subscribing, restoring purchases and online address suggestions need a connection.</p>
 
         <h2>Third-Party Services</h2>
-        <p>Sales Secretary integrates no third-party analytics, advertising, crash-reporting, or tracking services. It uses only first-party Apple frameworks (SwiftUI, SwiftData, StoreKit, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
+        <p>Sales Secretary integrates no third-party analytics, advertising, crash-reporting or tracking services. Its data storage and optional sync use Apple frameworks, including SwiftData, CloudKit and iCloud key-value storage. Other Apple frameworks provide purchases, maps, photos, notifications and charts.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Sales Secretary does not knowingly collect any information from children. The app has no accounts, no social features, no user-generated content shared with anyone, and no data collection.</p>
+        <p>Sales Secretary has no social features, public profiles or public sharing of records. The developer does not receive records through iCloud sync. The app does not knowingly collect personal information from children.</p>
 
         <h2>Your Rights and Deleting Your Data</h2>
-        <p>Because no personal data ever reaches us, there is nothing for us to disclose, correct, or erase on your behalf. Your data lives on your device: you can delete individual records inside the app, and deleting the app removes all of it, including photos. Note that this is permanent — if you want to keep your records, export them first.</p>
+        <p>The developer cannot view, correct or erase your private app records on your behalf. You can edit or delete records in the app. Deleting a purchase removes its items, linked sales and related photos; with sync on, those deletions propagate to your other devices. Uninstalling removes the app’s local data but does not delete a synced iCloud copy or separate exports and backups. Manage iCloud data through your Apple Account, and keep a separate export if you need a records backup. Manual JSON exports do not contain photos. If you contact us by email, we receive the information you choose to include and use it to respond to your request.</p>
 
         <h2>Changes to This Policy</h2>
         <p>If this policy is updated, the revised version will be posted at this URL with a new effective date.</p>
@@ -122,7 +127,7 @@
         <hr>
 
         <h1>Datenschutzerklärung</h1>
-        <p class="date">Stand: 18. August 2026</p>
+        <p class="date">Stand: 21. September 2026</p>
 
         <h2>Geltungsbereich</h2>
         <p>Diese Datenschutzerklärung gilt für <strong>Sales Secretary</strong> im App Store (im Folgenden „Sales Secretary" oder „die App"). Sales Secretary ist eine private Buchhaltungs-App für den Wiederverkauf von Kleidung: Sie erfasst Einkäufe, Rückgaben, Verkäufe und berechnet den Gewinn.</p>
@@ -132,22 +137,27 @@
         E-Mail: <a href="mailto:echomaze.app@gmail.com">echomaze.app@gmail.com</a></p>
 
         <h2>Datenerfassung</h2>
-        <p>Sales Secretary erhebt, speichert oder überträgt keinerlei personenbezogene Daten an uns. Die App erfordert kein Benutzerkonto, verwendet keine Analysedienste und enthält keine Werbe-SDKs oder Tracking-Technologien. Es existiert kein Sales-Secretary-Server; wir erhalten Ihre Daten zu keinem Zeitpunkt.</p>
+        <p>Sales Secretary sendet Ihre Aufzeichnungen nicht an den Entwickler. Es gibt keinen Sales-Secretary-Server, kein separates App-Konto, keine Analysedienste, keine Werbe-SDKs und kein Tracking. Ab Version 1.6 können Sie Ihre Daten freiwillig über Ihren privaten Apple-iCloud-Account synchronisieren. Apple verarbeitet diese Daten nach den eigenen Bedingungen und Datenschutzbestimmungen; der Entwickler kann Ihre privaten iCloud-Aufzeichnungen nicht einsehen.</p>
 
         <h2>Lokale Speicherung</h2>
-        <p>Sämtliche Eingaben — Einkäufe, Artikel, Preise, Verkäufe, Käufer, Notizen, Zahlungspläne, Fotos sowie Ihre Einstellungen — werden ausschließlich lokal auf Ihrem Gerät über Apples SwiftData und UserDefaults gespeichert. Es findet keine iCloud-Synchronisation statt; die Daten verbleiben auf dem Gerät, auf dem sie eingegeben wurden, sofern Sie sie nicht selbst exportieren.</p>
+        <p>Einkäufe, Artikel, Preise, Verkäufe, Käuferdaten, Notizen, Zahlungspläne und Fotos werden in der App-Datenbank auf Ihrem Gerät gespeichert. Einstellungen und eigene Auswahllisten werden lokal gespeichert. Die App ist offline nutzbar. Vor Version 1.6 werden Aufzeichnungen lokal gespeichert; ab Version 1.6 steht die optionale iCloud-Synchronisation zur Verfügung. Sie bleibt ausgeschaltet, bis Sie sie in den Einstellungen aktivieren.</p>
+
+        <h2>Optionale iCloud-Synchronisation (ab Version 1.6)</h2>
+        <p>Wenn Sie die Synchronisation aktivieren und die App neu starten, werden vorhandene und zukünftige Einkäufe, Artikel, Rückgaben, Erstattungen, Zahlungspläne, Verkäufe, Käufernamen und -adressen, Notizen und angehängte Fotos über Apple CloudKit in Ihre private iCloud-Datenbank übertragen. Eigene und ausgeblendete Listeneinträge, die Währung und der Rückgabezeitraum für „Needs attention“ werden über Apples iCloud-Schlüsselwertspeicher synchronisiert. Die Daten stehen dann auf unterstützten iPhones, iPads und Macs mit demselben iCloud-Apple-Account und aktivierter Synchronisation zur Verfügung. Ein Google-Konto oder ein separates App-Konto ist nicht erforderlich. Benachrichtigungsberechtigungen, Erinnerungszeiten und Vorlaufzeiten für Benachrichtigungen bleiben gerätespezifisch.</p>
+        <p>Voraussetzungen sind eine Internetverbindung, für die App aktiviertes iCloud und ausreichender iCloud-Speicher. Apple steuert den Zeitpunkt der Übertragung; insbesondere Fotos können länger benötigen. Lokale Daten bleiben offline nutzbar. Änderungen und Löschungen werden ebenfalls synchronisiert. Synchronisation ist kein getrenntes Backup mit Versionshistorie. Wird dasselbe Feld auf zwei Geräten vor der Synchronisation geändert, kann eine Änderung die andere ersetzen. Vorhandene Daten auf einem Gerät werden mit den iCloud-Daten zusammengeführt. Importieren Sie eine manuelle Sicherung nur auf einem Gerät, um Duplikate zu vermeiden.</p>
+        <p>Sie können die Synchronisation in der App deaktivieren. Die Änderung wird nach vollständigem Schließen und erneutem Öffnen wirksam. Lokale Aufzeichnungen und die iCloud-Kopie werden dadurch nicht gelöscht. Auch eine Deinstallation entfernt die iCloud-Kopie nicht. Löschen Sie Aufzeichnungen bei aktivierter Synchronisation in der App und lassen Sie die Löschung synchronisieren, wenn sie auf allen Geräten entfernt werden sollen. Den iCloud-Speicher der App können Sie außerdem in Ihren Apple-Account-Einstellungen verwalten. Für Apples Dienst gelten <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzerklärung</a> und die <a href="https://www.apple.com/legal/internet-services/icloud/">iCloud-Bedingungen</a>.</p>
 
         <h2>Fotos</h2>
-        <p>Sie können Fotos von Rechnungen, Artikeln und Versandetiketten anhängen. Diese werden verkleinert und in der lokalen Datenbank der App auf Ihrem Gerät gespeichert. Sie werden weder hochgeladen noch übertragen. Der Zugriff auf Kamera und Fotomediathek wird ausschließlich zu diesem Zweck und erst beim Hinzufügen eines Fotos angefragt.</p>
+        <p>Sie können Fotos von Rechnungen, Artikeln, Rückgabebelegen und Versandetiketten anhängen. Diese werden verkleinert und in der App-Datenbank gespeichert. Bei aktivierter iCloud-Synchronisation werden diese Kopien auch in Ihre private iCloud übertragen. Der Zugriff auf Kamera und Fotomediathek dient nur dem Hinzufügen der von Ihnen ausgewählten Fotos. Der manuelle JSON-Export enthält keine Fotos.</p>
 
         <h2>Adressvorschläge</h2>
-        <p>Bei der Eingabe einer Abholadresse nutzt die App Apples MapKit-Suchvervollständigung, um echte Straßen und Orte vorzuschlagen. Dabei wird der von Ihnen eingegebene Textausschnitt an Apple übermittelt, um die Vorschläge zu erhalten. Die Verarbeitung erfolgt durch Apple gemäß <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzerklärung</a>; es werden keine weiteren Daten aus Ihren Aufzeichnungen mitgesendet. Abgesehen von den unten beschriebenen Kaufabfragen ist dies die einzige Funktion, bei der Daten das Gerät verlassen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der korrekten Adresserfassung); Sie können darauf verzichten, indem Sie die Adresse ohne Auswahl eines Vorschlags eintippen.</p>
+        <p>Bei der Eingabe einer Abholadresse übermittelt Apples MapKit-Suchvervollständigung den eingegebenen Textausschnitt an Apple, um Vorschläge abzurufen. Dies kann bereits beim Tippen geschehen, bevor Sie einen Vorschlag auswählen. Apple verarbeitet diese Anfragen gemäß <a href="https://www.apple.com/legal/privacy/">Apples Datenschutzerklärung</a>. Andere Felder Ihrer Aufzeichnungen werden nicht an die Suchanfrage angehängt.</p>
 
         <h2>Öffnen in Karten-Apps</h2>
         <p>Zu jeder gespeicherten Adresse können Sie „In Karten öffnen" wählen (Apple Karten, Google Maps oder Waze). Dabei wird die Adresse an den von Ihnen gewählten Dienst übergeben; ab diesem Zeitpunkt gilt dessen eigene Datenschutzerklärung. Ohne Ihre ausdrückliche Auswahl wird nichts übermittelt.</p>
 
         <h2>Benachrichtigungen</h2>
-        <p>Die App kann an Rückgabefristen, fällige Ratenzahlungen und zu versendende Pakete erinnern. Es handelt sich um lokale Benachrichtigungen, die iOS auf Ihrem Gerät aus bereits vorhandenen Daten plant und zustellt. Ein Push-Server ist nicht beteiligt. Benachrichtigungen sind standardmäßig deaktiviert und die Berechtigung ist jederzeit in den iOS-Einstellungen widerrufbar.</p>
+        <p>Erinnerungen an Rückgaben, Zahlungen und Versand werden lokal auf Ihrem Gerät geplant. Sie sind zunächst ausgeschaltet; die Berechtigung ist in den Geräteeinstellungen widerrufbar. Unabhängig davon verwendet Apple bei aktivierter iCloud-Synchronisation Hintergrund-Push-Mitteilungen, um die App über Cloud-Änderungen zu informieren. Dadurch werden keine Erinnerungsbenachrichtigungen aktiviert. Ein Sales-Secretary-Push-Server ist nicht beteiligt.</p>
 
         <h2>Export und Import</h2>
         <p>Sie können Ihre Daten in eine Datei exportieren, um ein Backup anzulegen oder sie auf ein anderes Gerät zu übertragen. Die Datei wird auf Ihrem Gerät erzeugt und an das iOS-Teilen-Menü übergeben; wohin sie anschließend gelangt, entscheiden ausschließlich Sie. Die Datei enthält Ihre erfassten Datensätze und sollte entsprechend behandelt werden. Fotos sind im Export nicht enthalten.</p>
@@ -162,13 +172,13 @@
 <p>Sales Secretary Pro umfasst Widgets für den Home-Bildschirm und den Sperrbildschirm. Um Ihre Zahlen außerhalb der App anzuzeigen, schreibt die App eine kleine Zusammenfassung (Ihre Gewinnsummen sowie Namen, Termine und Beträge der Dinge, die Aufmerksamkeit benötigen) in einen privaten Container auf Ihrem Gerät, den nur Sales Secretary und seine Widgets lesen können. Sie wird beim Verlassen der App geschrieben und verbleibt auf Ihrem Gerät; sie wird nie hochgeladen oder weitergegeben. Die Widgets stellen keine eigenen Netzwerkanfragen. Ohne Pro zeigen die Widgets einen gesperrten Zustand, und die Zusammenfassung enthält keine Datensätze.</p>
 
 <h2>Netzwerkzugriff</h2>
-        <p>Abgesehen von den oben beschriebenen Adressvorschlägen und den Kaufabfragen stellt Sales Secretary keine Netzwerkanfragen. Die App ist vollständig offline nutzbar; lediglich Adressvorschläge sowie Abschluss und Wiederherstellung eines Kaufs benötigen eine Verbindung. Einmal freigeschaltet, bleibt Pro auf Ihrem Gerät auch offline verfügbar.</p>
+        <p>Netzwerkzugriffe erfolgen für die optionale iCloud-Synchronisation, Adressvorschläge, das Öffnen eines gewählten Kartendienstes und App-Store-Kaufabfragen. Lokale Aufzeichnungen bleiben offline nutzbar. iCloud-Übertragungen warten auf eine Verbindung; Abonnements, Kaufwiederherstellung und Online-Adressvorschläge benötigen eine Verbindung.</p>
 
         <h2>Drittanbieter-Dienste</h2>
-        <p>Sales Secretary integriert keine Analyse-, Werbe-, Crash-Reporting- oder Tracking-Dienste von Drittanbietern. Verwendet werden ausschließlich Apple-eigene Frameworks (SwiftUI, SwiftData, StoreKit, MapKit, PhotosUI, UserNotifications, Swift Charts, UIKit).</p>
+        <p>Sales Secretary integriert keine Analyse-, Werbe-, Crash-Reporting- oder Tracking-Dienste von Drittanbietern. Für Speicherung und optionale Synchronisation werden Apple-Frameworks wie SwiftData, CloudKit und der iCloud-Schlüsselwertspeicher verwendet. Weitere Apple-Frameworks stellen Käufe, Karten, Fotos, Benachrichtigungen und Diagramme bereit.</p>
 
         <h2>Ihre Rechte (DSGVO)</h2>
-        <p>Da uns keine personenbezogenen Daten erreichen, können wir weder Auskunft erteilen noch Daten berichtigen oder löschen — es liegen uns schlicht keine vor. Ihre Daten befinden sich auf Ihrem Gerät: Einzelne Einträge können Sie in der App löschen, und das Entfernen der App löscht sämtliche Daten einschließlich der Fotos. Dieser Vorgang ist endgültig; exportieren Sie Ihre Daten vorher, wenn Sie sie behalten möchten. Bei Rückfragen erreichen Sie uns unter der oben genannten E-Mail-Adresse.</p>
+        <p>Der Entwickler kann Ihre privaten App-Aufzeichnungen weder einsehen noch für Sie berichtigen oder löschen. Sie können Datensätze in der App bearbeiten oder löschen. Das Löschen eines Einkaufs entfernt dessen Artikel, verknüpfte Verkäufe und zugehörige Fotos; bei aktivierter Synchronisation werden diese Löschungen auf Ihre anderen Geräte übertragen. Eine Deinstallation entfernt lokale App-Daten, aber keine synchronisierte iCloud-Kopie und keine getrennten Exporte oder Backups. Verwalten Sie iCloud-Daten über Ihren Apple-Account. Ein manueller JSON-Export sichert Aufzeichnungen, enthält jedoch keine Fotos. Wenn Sie uns per E-Mail kontaktieren, erhalten wir die von Ihnen mitgeteilten Informationen und verwenden sie zur Bearbeitung Ihrer Anfrage. Bei Fragen erreichen Sie uns über die oben genannte E-Mail-Adresse.</p>
 
         <h2>Änderungen</h2>
         <p>Bei Änderungen dieser Datenschutzerklärung wird die aktualisierte Version an dieser Stelle mit neuem Datum veröffentlicht.</p>
