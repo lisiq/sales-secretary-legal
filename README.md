@@ -1,7 +1,8 @@
 # Sales Secretary website
 
 [Sales Secretary](https://lisiq.github.io/sales-secretary-legal/app/) is an iPhone
-and iPad app for clothing inventory, purchases, returns and sale profit.
+and iPad app for sellers and resellers to track inventory, purchases, returns
+and sale profit.
 
 - [Get the app](https://apps.apple.com/app/id6797229901)
 - [Free resale profit calculator](https://lisiq.github.io/sales-secretary-legal/tools/resale-profit/)
@@ -25,8 +26,7 @@ The app uses Apple's standard EULA. No separate app account was introduced.
 
 10 October 2026: added `/app/`, `/tools/resale-profit/`, shared static assets and
 a sitemap. The legal page gets navigation links; its policy text and effective
-date remain unchanged. Pages have no tracking, external fonts or third-party
-scripts. Calculator inputs are neither stored nor transmitted. GitHub processes
+date remain unchanged. Pages have no analytics scripts, external fonts or third-party scripts. Calculator inputs are neither stored nor transmitted. GitHub processes
 ordinary website requests under its own privacy policy.
 
 ## Development
@@ -38,5 +38,14 @@ Tests are maintained in the app repository at
 
 Use the existing, approved screenshots in `assets/`. Do not substitute design
 mockups for real app screenshots. Do not promise model accuracy or live prices.
-App Store links are currently direct links. Real campaign links can replace them
-when generated in App Store Connect; do not invent a provider token.
+Download links now use real Apple campaign URLs generated in App Store Connect
+(`web-app` and `web-profit-tool`). Apple reports eligible aggregate results. No
+calculator values are included. Safari app banners and schema identity links
+remain plain links; website visits themselves are not counted by a local tracker.
+
+10 October clarification: the intended audience includes sellers and resellers
+of physical goods, not only clothing. Updated page text, metadata and social
+previews. The visible FAQ explains the current clothing preset categories and
+Other / Pro custom-category options. Added factual SoftwareApplication JSON-LD
+matching the visible page; no invented ratings and no claim of AI ranking or
+Google rich-result eligibility. No data-handling change; policy date retained.
